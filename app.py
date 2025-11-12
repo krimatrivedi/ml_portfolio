@@ -128,9 +128,13 @@ from demos import (
     sweetness_clustering,
     neural_network_learner,
     cnn_coffee_classifier,
+    llm_playground,
+    agentic_research_assistant
+    # rag_chatbot
 )
 
 demo_cols = st.columns(5)
+demo_cols1 = st.columns(5)
 
 with demo_cols[0]:
     # st.image("https://via.placeholder.com/300x180.png?text=Regression+Demo", use_container_width=True)
@@ -157,6 +161,22 @@ with demo_cols[4]:
     if st.button("Launch CNN Demo", key="cnn_demo"):
         st.session_state["active_demo"] = "cnn"
 
+
+with demo_cols1[0]:
+    # st.image("https://via.placeholder.com/300x180.png?text=CNN+Demo", use_container_width=True)
+    if st.button("LLM API", key="llm_api"):
+        st.session_state["active_demo"] = "llm_api"
+
+with demo_cols1[1]:
+    # st.image("https://via.placeholder.com/300x180.png?text=CNN+Demo", use_container_width=True)
+    if st.button("Agentic AI", key="agentic_ai"):
+        st.session_state["active_demo"] = "agentic_ai"
+
+# with demo_cols1[1]:
+#     # st.image("https://via.placeholder.com/300x180.png?text=CNN+Demo", use_container_width=True)
+#     if st.button("RAG", key="rag_chatbot"):
+#         st.session_state["active_demo"] = "rag_chatbot"
+
 # Load selected demo dynamically (lazy loading)
 if "active_demo" in st.session_state:
     demo = st.session_state["active_demo"]
@@ -170,6 +190,12 @@ if "active_demo" in st.session_state:
         neural_network_learner.run_demo()
     elif demo == "cnn":
         cnn_coffee_classifier.run_demo()
+    elif demo == "llm_api":
+        llm_playground.run_demo()
+    elif demo == "agentic_ai":
+        agentic_research_assistant.run_demo()
+    # elif demo == "rag_chatbot":
+    #     rag_chatbot.run_demo()
     # Close button
     if st.button("❌ Close Demo"):
         del st.session_state["active_demo"]
