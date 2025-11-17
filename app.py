@@ -129,8 +129,9 @@ from demos import (
     neural_network_learner,
     cnn_coffee_classifier,
     llm_playground,
-    agentic_research_assistant
-    # rag_chatbot
+    agentic_research_assistant,
+    rag_chatbot,
+    # multi_processing
 )
 
 demo_cols = st.columns(5)
@@ -172,10 +173,15 @@ with demo_cols1[1]:
     if st.button("Agentic AI", key="agentic_ai"):
         st.session_state["active_demo"] = "agentic_ai"
 
-# with demo_cols1[1]:
+with demo_cols1[2]:
+    # st.image("https://via.placeholder.com/300x180.png?text=CNN+Demo", use_container_width=True)
+    if st.button("RAG", key="rag_chatbot"):
+        st.session_state["active_demo"] = "rag_chatbot"
+
+# with demo_cols1[3]:
 #     # st.image("https://via.placeholder.com/300x180.png?text=CNN+Demo", use_container_width=True)
-#     if st.button("RAG", key="rag_chatbot"):
-#         st.session_state["active_demo"] = "rag_chatbot"
+#     if st.button("Multi processing", key="multi_processing"):
+#         st.session_state["active_demo"] = "multi_processing"
 
 # Load selected demo dynamically (lazy loading)
 if "active_demo" in st.session_state:
@@ -194,8 +200,10 @@ if "active_demo" in st.session_state:
         llm_playground.run_demo()
     elif demo == "agentic_ai":
         agentic_research_assistant.run_demo()
-    # elif demo == "rag_chatbot":
-    #     rag_chatbot.run_demo()
+    elif demo == "rag_chatbot":
+        rag_chatbot.run_demo()
+    # elif demo == "multi_processing":
+    #     multi_processing.run_demo()
     # Close button
     if st.button("❌ Close Demo"):
         del st.session_state["active_demo"]
