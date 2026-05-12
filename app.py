@@ -13,11 +13,11 @@ st.set_page_config(
 # HEADER
 # --------------------
 st.title("👩‍💻 Krima Trivedi")
-st.subheader("Machine Learning & AI Developer | Full-Stack Engineer")
+st.subheader("AI Engineer | GenAI Engineer | Python Backend Developer")
 st.markdown(
     """
-    I build intelligent, data-driven systems that solve real-world problems.  
-    My mission: blending ML models with practical engineering for measurable impact.
+    I build scalable backend systems and AI-powered applications using Python, FastAPI, and Large Language Models. 
+    Experienced in production-ready GenAI workflows, multi-agent systems, and intelligent automation.
     """
 )
 
@@ -29,13 +29,12 @@ st.divider()
 st.header("🌱 About Me")
 st.write(
     """
-    I'm a certified Machine Learning and AI with a strong foundation in Python, 
-    full-stack web development.  
-    I focus on **creating ML solutions that are easy to use, interpret** — 
-    bridging the gap between data and decision-making.
+    I am an **AI Engineer and Python Backend Developer** with **2.9 years of experience** building scalable backend systems and AI-powered applications. 
+    I specialize in developing production-ready GenAI workflows, multi-agent systems, and Retrieval-Augmented Generation (RAG) pipelines.
 
-    - 💡 Currently learning advanced Deep Learning & ML deployment.
-    - 🚀 Experienced in Python, Streamlit, TensorFlow, scikit-learn, and AngularJS.
+    - 🚀 Experienced in **FastAPI, Django, PostgreSQL, and Pinecone**.
+    - 💡 Focus on **Prompt Engineering, LLM orchestration, and NLP workflows**.
+    - 🛠️ Passionate about bridging the gap between AI prototypes and production-grade engineering.
     """
 )
 
@@ -46,59 +45,111 @@ st.divider()
 # --------------------
 st.header("⚙️ Technical Skills")
 
-col1, col2 = st.columns(2)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.subheader("Programming")
-    st.write("- Python")
-    st.write("- JavaScript (AngularJS)")
-    st.write("- SQL, POSTgreSQl, DJango")
-
-    st.subheader("Libraries & Tools")
-    st.write("- Pandas, NumPy")
-    st.write("- scikit-learn, TensorFlow, PyTorch")
-    st.write("- Streamlit, Git, Matplotlib")
+    st.subheader("💻 Backend")
+    st.write("- Python, FastAPI, Django")
+    st.write("- REST APIs, Microservices")
+    st.write("- HTML5, CSS3, AngularJS")
 
 with col2:
-    st.subheader("Concepts")
-    st.write("- Supervised & Unsupervised Learning")
-    st.write("- Neural Networks & Deep Learning")
-    st.write("- Clustering & Feature Engineering")
-    st.write("- Model Evaluation Metrics")
+    st.subheader("🤖 AI & GenAI")
+    st.write("- RAG, LLMs, AI Agents")
+    st.write("- Multi-Agent Systems")
+    st.write("- Prompt Engineering, NLP")
+
+with col3:
+    st.subheader("🗄️ Databases")
+    st.write("- PostgreSQL, SQL")
+    st.write("- Pinecone, Vector DBs")
+    st.write("- Semantic Search")
+
+with col4:
+    st.subheader("🛠️ Tools")
+    st.write("- Docker, Git")
+    st.write("- Streamlit, Hugging Face")
+    st.write("- OpenAI APIs")
+
+st.divider()
+
+# --------------------
+# PROFESSIONAL EXPERIENCE
+# --------------------
+st.header("💼 Professional Experience")
+
+with st.expander("🚀 Software Engineer | Current Organization", expanded=True):
+    st.write("**Feb 2026 – Present**")
+    st.write(
+        """
+        - Developed AI-powered backend services using Python, FastAPI, PostgreSQL, and Vector Databases.
+        - Built Retrieval-Augmented Generation (RAG) pipelines that improved contextual response relevance.
+        - Designed modular microservice architectures that accelerated feature integration.
+        - Optimized backend APIs, reducing response latency and improving application performance.
+        """
+    )
+
+with st.expander("💻 Full Stack Python Developer | Intellial Solution Pvt Ltd"):
+    st.write("**May 2023 – Jan 2026**")
+    st.write(
+        """
+        - Developed and maintained enterprise-grade web applications using Python, Django, and PostgreSQL.
+        - Built scalable backend APIs and automation workflows that reduced repetitive manual operations.
+        - Optimized database queries and backend logic, improving application responsiveness.
+        - Supported integration of AI-powered retrieval workflows and intelligent backend features.
+        """
+    )
 
 st.divider()
 
 # --------------------
 # PROJECTS SECTION
 # --------------------
-st.header("📂 Projects")
+st.header("📂 Selected AI Projects")
 
 project_cols = st.columns(2)
 
 with project_cols[0]:
-    st.subheader("🏠 Resume Screening System")
+    st.subheader("🤖 AI Support Multi-Agent System")
     st.write(
-        "A Streamlit-powered application that extracts skills, education, and experience from resumes, compares them with job descriptions, and computes a match score. Perfect for recruiters and hiring teams to quickly screen candidates."
+        """
+        Intelligent support system that classifies, routes, and responds to queries using AI-driven orchestration.
+        - **Key Features:** Multi-agent workflow, AI ticket classification, automated response generation, and FastAPI backend.
+        """
     )
-    st.markdown("[🔗 View on GitHub](https://github.com/krimatrivedi/resume-screening-system)")
+    st.markdown("[🔗 View on GitHub](https://github.com/krimatrivedi/ai-support-multi-agent)")
 
 with project_cols[1]:
-    st.subheader("🧠 AI Meeting Summarizer")
+    st.subheader("⚕️ AI Medical Scribe Demo")
     st.write(
-        "A Streamlit-powered web app that automatically summarizes meeting transcripts and extracts actionable tasks using AI and NLP."
+        """
+        Extracts structured medical information from doctor-patient conversations using NLP and LLM workflows.
+        - **Key Features:** Symptom & diagnosis extraction, automated clinical note generation, and Streamlit integration.
+        """
     )
-    st.markdown("[🔗 View on GitHub](https://github.com/krimatrivedi/meeting-summarizer.git)")
+    st.markdown("[🔗 View on GitHub](https://github.com/krimatrivedi/medical_scribe_demo)")
 
 project_cols2 = st.columns(2)
 
 with project_cols2[0]:
-    st.subheader("📊 Customer Churn Prediction – End-to-End ML Project")
+    st.subheader("📈 AI Business Analytics Platform")
     st.write(
-        "Telecom companies lose millions every year due to customer churn (customers leaving the service). "
-        "This project predicts whether a customer will churn based on demographic, account, and service details. "
-        "By identifying who is at risk, businesses can take action (loyalty programs, discounts, better service) to reduce churn and save revenue."
+        """
+        Generates business insights and automated analytical summaries using AI-driven processing.
+        - **Key Features:** Backend analytics services, AI-powered summarization, and PostgreSQL integration.
+        """
     )
-    st.markdown("[🔗 View on GitHub](https://github.com/krimatrivedi/customer-churn-prediction.git)")
+    st.markdown("[🔗 View on GitHub](https://github.com/krimatrivedi/ai-business-analytics)")
+
+with project_cols2[1]:
+    st.subheader("🏠 Resume Screening System")
+    st.write(
+        """
+        Extracts skills and experience from resumes and computes match scores against job descriptions.
+        - **Key Features:** PDF parsing, skill extraction, and real-time match scoring using NLP.
+        """
+    )
+    st.markdown("[🔗 View on GitHub](https://github.com/krimatrivedi/resume-screening-system)")
 
 st.divider()
 
@@ -165,17 +216,17 @@ with demo_cols[4]:
 
 with demo_cols1[0]:
     # st.image("https://via.placeholder.com/300x180.png?text=CNN+Demo", use_container_width=True)
-    if st.button("LLM API", key="llm_api"):
+    if st.button("LLM Playground", key="llm_api"):
         st.session_state["active_demo"] = "llm_api"
 
 with demo_cols1[1]:
     # st.image("https://via.placeholder.com/300x180.png?text=CNN+Demo", use_container_width=True)
-    if st.button("Agentic AI", key="agentic_ai"):
+    if st.button("Agentic Scheduler", key="agentic_ai"):
         st.session_state["active_demo"] = "agentic_ai"
 
 with demo_cols1[2]:
     # st.image("https://via.placeholder.com/300x180.png?text=CNN+Demo", use_container_width=True)
-    if st.button("RAG", key="rag_chatbot"):
+    if st.button("Resume RAG Chatbot", key="rag_chatbot"):
         st.session_state["active_demo"] = "rag_chatbot"
 
 # with demo_cols1[3]:
@@ -322,7 +373,7 @@ button:hover {
 """, unsafe_allow_html=True)
 
 st.markdown("---")
-st.caption("© 2025 Krima Trivedi | Built with Streamlit")
+st.caption("© 2026 Krima Trivedi | Built with Streamlit")
 
 # --------------------
 # CUSTOM STYLE

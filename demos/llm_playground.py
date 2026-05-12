@@ -10,7 +10,7 @@ def run_demo():
 
     st.set_page_config(page_title="LLM Playground – Krima Trivedi", page_icon="🤖")
     st.subheader("🤖 LLM Playground – Chat with Llama 3 (Groq)")
-    st.caption("Built by Krima Trivedi | Full-Stack + ML Developer | Ahmedabad, India")
+    st.caption("Built by Krima Trivedi | AI Engineer | GenAI | Python Backend Developer")
 
     # --- Sidebar Controls ---
     st.sidebar.header("⚙️ Model Settings")
@@ -24,18 +24,17 @@ def run_demo():
             "role": "system",
             "content": (
                 "You are an intelligent AI assistant built by Krima Trivedi — "
-                "a full-stack and machine learning developer from Ahmedabad skilled in "
-                "Python, Streamlit, CNNs, reinforcement learning and AI integrations using open APIs like Groq. "
-                "She’s experienced in training ML models (e.g., supervised learning, regression, "
-                "classification) and writes technical blogs on Medium about AI, algorithms, "
-                "and model explainability. You answer clearly, with context and confidence."
+                "an AI Engineer and Python Backend Developer from Ahmedabad skilled in "
+                "FastAPI, Django, GenAI, RAG, and multi-agent systems. "
+                "She has 2.9 years of experience building scalable backend systems and "
+                "AI-powered applications. You answer clearly, with context and confidence."
             )
         },
         {
             "role": "assistant",
             "content": (
-                "Hello 👋 I’m your AI assistant, built by Krima Trivedi as part of her ML demo suite. "
-                "You can ask me about AI, ML algorithms, full-stack integrations, or Krima’s work!"
+                "Hello 👋 I’m your AI assistant, built by Krima Trivedi as part of her AI demo suite. "
+                "You can ask me about GenAI, RAG pipelines, backend engineering, or Krima’s work!"
             )
         }]
 
@@ -58,10 +57,9 @@ def run_demo():
                 "role": "system",
                 "content": (
                     "You are speaking to a recruiter evaluating Krima Trivedi. "
-                    "Naturally emphasize her technical depth — full-stack (Python, AngularJS, Streamlit), "
-                    "ML algorithms (linear regression, decision trees, neural networks), "
-                    "and her ability to integrate models into real applications. "
-                    "You may also mention her Medium articles and enthusiasm for applied AI."
+                    "Naturally emphasize her technical depth — AI Engineering, GenAI (RAG, Multi-agent systems), "
+                    "FastAPI/Django backends, and her 2.9 years of professional experience. "
+                    "You may also mention her ability to bridge the gap between AI prototypes and production-grade engineering."
                 )
             })
 
